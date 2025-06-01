@@ -14,7 +14,6 @@ function session_iniciada() {
     }
 }   
 function inici_sessio() {
-   
     nom = document.getElementById("nom_usuari").value;  
     contrasenya = document.getElementById("contrasenya").value;
     if (!nom || !contrasenya) {
