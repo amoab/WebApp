@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #e6ff80; /* Llimona */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#superior {
+    background-color: #00e600; /* Verd viu */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#ajustes {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 2px; /* más cuadrado */
+}
+
+button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px; /* más cuadrado */
+    cursor: pointer;
+}
+
+.btn-principal {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-logout {
+    background-color: #e53935;
+    color: white;
+}
+
+#menu {
+    background-color: #800000; /* Bordeus */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu a {
+    color: white;
+    font-size: 24px;
+}
