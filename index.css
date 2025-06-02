@@ -13,6 +13,7 @@ body{
     font-family: sans-serif;
     background-color: rgba(212, 251, 69, 0.8); /*Color fons del web*/
 }
+
 #superior´{
     display: flex;
     height: 8vmax;
@@ -21,6 +22,7 @@ body{
     color: white;
     border-color: #950E17;
 }
+
 #superior {
     display: flex;  
     height: 8vmax;    /*Tamany de capsalera, adaptat al 8% pantalla*/
@@ -29,14 +31,21 @@ body{
     font-size: 4vmax;    /* El tanamany del text adaptat al 4% pantalla*/
     color: #173c1a;    /*Color lletres capsalera*/
     background-color: #00ff0f;    /*Color fons capsalera*/
+    position: fixed;
+    top: 6px;            /* coincide con el margin del body */
+    left: 6px;
+    right: 6px;
+    z-index: 100;
+   
 }
 #menu {
-    height: 8vmax;    /*Distancia adaptada al 8% de seccions*/
-}
-
-#menu {
-    display: flex;    /* el menú és un contenidor de tipus flex */
+    display: flex;
     height: 6vmax;
+    position: fixed;
+    bottom: 6px;       
+    left: 6px;
+    right: 6px;
+    z-index: 100;
 }
 #menu i{
     flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
@@ -61,6 +70,8 @@ body{
     text-align: right;
     font-size: 3vmax;
     margin: 5vmin;
+    margin-top: calc(8vmax + 1vmin);
+    margin-bottom: calc(6vmax + 1vmin);
 }
 #credencials div {    /* els 2 <div> dins de credencials */
     margin-bottom: 1vmin;
@@ -176,4 +187,43 @@ body{
     #llista_fotos {
         height: 70vmin;
     }
+}
+#galeria_fotos {
+    display: flex;
+    flex-wrap: wrap;                    
+    justify-content: space-around;   
+    padding: 1vmin;
+    margin-top: calc(8vmax + 3vmin);
+    margin-bottom: calc(6vmax + 3vmin);
+}
+
+.foto_item {
+    text-align: center;
+    margin-bottom: 2vmin;
+    flex: 0 1 30vmin;
+}
+
+.foto_item img {
+    width: 42vmin;
+    height: 28vmin;                   
+    object-fit: cover;          
+    border-radius: 0.5vmin;
+    box-shadow: 0 0.5vmin 1vmin rgba(0,0,0,0.1);
+}
+
+.foto_item .info {
+    margin-top: 1vmin;
+}
+
+.foto_item .nombre {
+    display: block;
+    font-size: 2vmin;             
+    font-weight: bold;
+    color: #173c1a;
+}
+
+.foto_item .precio {
+    display: block;
+    font-size: 2vmin;
+    color: #950E17;
 }
